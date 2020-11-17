@@ -62,7 +62,7 @@ class TicTacToe
   
   def won?
     WIN_COMBINATIONS.detect do |combo|
-      combo[0]
+      if position_taken(combo[0]) 
     end
   end  
 end
